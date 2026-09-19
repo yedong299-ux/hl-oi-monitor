@@ -24,7 +24,7 @@ jobs:
       - name: 运行监控脚本
         env:
           BARK_KEY: ${{ secrets.BARK_KEY }}
-          OI_CHANGE_THRESHOLD: "10"
+          OI_CHANGE_THRESHOLD: "2"
           # 如果只想盯自己持仓的币种，取消下面一行的注释并改成你的列表
           # OI_WATCHLIST: "B2,MMT,STRK,AR,MARSCOIN,ARK,VTHO,USELESS"
         run: python monitor.py
